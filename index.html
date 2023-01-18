@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Convention Center</title>
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/d94935f344.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Adlam+Unjoined&display=swap" rel="stylesheet">
+    <!-- css style link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+    }
+</style>
+
+<body>
+    <header>
+        <!-------------------- Navbar ------------------ [To keep the navbar top always i put the nav tag before header] --------------->
+        <nav class="navbar navbar-expand-lg bg-light py-3">
+            <div class="container-fluid">
+                <a class="navbar-brand navbar-logo-txt" href="#">Karim Convention Center</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mr-auto" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/wed3.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption mb-lg-4">
+                        <h1>The perfect venue for your next chapter</h1>
+                        <p class="d-none d-sm-block">Tie the knot and embrace a new chapter <br> surrounded by your
+                            loved ones, with life awaiting wonderful memories</p>
+                        <a href="https://linktr.ee/guygatsby" target="_blank"
+                            class=" white-btn py-1 px-2 px-lg-4 py-lg-2">Book Now</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/party.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption mb-lg-4">
+                        <h1>Exceptional memories at exceptional places</h1>
+                        <p class="d-none d-sm-block">Whether it's parties or any other event <br> we've
+                            got you covered with all the necessary equipments and services</p>
+                        <a href="https://linktr.ee/guygatsby" target="_blank"
+                            class=" white-btn py-1 px-2 px-lg-4 py-lg-2">Book Now</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/banner.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption mb-lg-4">
+                        <h1>Service at it's finest</h1>
+                        <p class="d-none d-sm-block">We take great aim on providing quality service and experience <br>
+                            so that you can
+                            focus on living in the moment</p>
+                        <a href="https://linktr.ee/guygatsby" target="_blank"
+                            class=" white-btn py-1 px-2 px-lg-4 py-lg-2">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <!-- main part -->
+    <main>
+        <!-- gallery section -->
+        <section id="gallery" class="container mx-auto pt-5 mt-lg-5">
+            <div class="row row-cols-1 row-cols-lg-2 g-4 d-flex align-items-center">
+                <div class="col gallery-img">
+                    <img class="img-fluid rounded-5" src="images/section.png" alt="">
+                </div>
+                <div class="col gallery-txt">
+                    <h1>Every moment is precious</h1>
+                    <p class="fs-5 text-muted">See how others have captured their moments in our nicely curated
+                        album.
+                    </p>
+                    <a href="https://linktr.ee/guygatsby" target="_blank" class="black-btn">Explore album <i
+                            class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
