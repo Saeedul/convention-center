@@ -36,6 +36,11 @@ body {
     background-color: var(--blue);
 }
 
+.img-fluid {
+    max-width: 80%;
+    height: auto;
+}
+
 .black-btn {
     display: inline-block;
     text-decoration: none;
@@ -52,4 +57,11 @@ body {
     background-color: transparent;
     border: 2px solid var(--blue);
     color: var(--blue);
+}
+
+.toast-border {
+    border-left: 7px solid var(--blue);
+    position: fixed;
+    right: 0;
+    bottom: 4%;
 }
