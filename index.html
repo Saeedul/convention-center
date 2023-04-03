@@ -108,7 +108,8 @@
     <!-- main part -->
     <main>
         <!-- gallery section -->
-        <section id="gallery" class="container mx-auto pt-5 mt-lg-5">
+        <section id="gallery" class="container mx-auto pt-5 mt-lg-5 pb-5">
+            <h1 class="text-center py-4">Explore Our Gallery</h1>
             <div class="row row-cols-1 row-cols-lg-2 g-4 d-flex align-items-center">
                 <div class="col gallery-img">
                     <img class="img-fluid rounded-5 ms-5" src="images/section.png" alt="">
@@ -136,255 +137,257 @@
             </div>
         </section>
         <!-- Packages section -->
-        <style>
-            a {
-                text-decoration: none;
-            }
-
-            .pricingTable {
-                text-align: center;
-                background: #fff;
-                margin: 0 -15px;
-                box-shadow: 0 0 10px #ababab;
-                padding-bottom: 40px;
-                border-radius: 10px;
-                color: #cad0de;
-                transform: scale(1);
-                transition: all .5s ease 0s
-            }
-
-            .pricingTable:hover {
-                transform: scale(1.05);
-                z-index: 1
-            }
-
-            .pricingTable .pricingTable-header {
-                padding: 40px 0;
-                background: #f5f6f9;
-                border-radius: 10px 10px 50% 50%;
-                transition: all .5s ease 0s
-            }
-
-            .pricingTable:hover .pricingTable-header {
-                background: #ff9624
-            }
-
-            .pricingTable .pricingTable-header i {
-                font-size: 50px;
-                color: #858c9a;
-                margin-bottom: 10px;
-                transition: all .5s ease 0s
-            }
-
-            .pricingTable .price-value {
-                font-size: 35px;
-                color: #ff9624;
-                transition: all .5s ease 0s
-            }
-
-            .pricingTable .month {
-                display: block;
-                font-size: 14px;
-                color: #cad0de
-            }
-
-            .pricingTable:hover .month,
-            .pricingTable:hover .price-value,
-            .pricingTable:hover .pricingTable-header i {
-                color: #fff
-            }
-
-            .pricingTable .heading {
-                font-size: 24px;
-                color: #ff9624;
-                margin-bottom: 20px;
-            }
-
-            .pricingTable .pricing-content ul {
-                list-style: none;
-                padding: 0;
-                margin-bottom: 30px
-            }
-
-            .pricingTable .pricing-content ul li {
-                line-height: 30px;
-                color: #a7a8aa
-            }
-
-            .pricingTable .pricingTable-signup a {
-                display: inline-block;
-                font-size: 15px;
-                color: #fff;
-                padding: 10px 35px;
-                border-radius: 20px;
-                background: #ffa442;
-                text-transform: uppercase;
-                transition: all .3s ease 0s
-            }
-
-            .pricingTable .pricingTable-signup a:hover {
-                box-shadow: 0 0 10px #ffa442
-            }
-
-            .pricingTable.blue .heading,
-            .pricingTable.blue .price-value {
-                color: #4b64ff
-            }
-
-            .pricingTable.blue .pricingTable-signup a,
-            .pricingTable.blue:hover .pricingTable-header {
-                background: #4b64ff
-            }
-
-            .pricingTable.blue .pricingTable-signup a:hover {
-                box-shadow: 0 0 10px #4b64ff
-            }
-
-            .pricingTable.red .heading,
-            .pricingTable.red .price-value {
-                color: #ff4b4b
-            }
-
-            .pricingTable.red .pricingTable-signup a,
-            .pricingTable.red:hover .pricingTable-header {
-                background: #ff4b4b
-            }
-
-            .pricingTable.red .pricingTable-signup a:hover {
-                box-shadow: 0 0 10px #ff4b4b
-            }
-
-            .pricingTable.green .heading,
-            .pricingTable.green .price-value {
-                color: #40c952
-            }
-
-            .pricingTable.green .pricingTable-signup a,
-            .pricingTable.green:hover .pricingTable-header {
-                background: #40c952
-            }
-
-            .pricingTable.green .pricingTable-signup a:hover {
-                box-shadow: 0 0 10px #40c952
-            }
-
-            .pricingTable.blue:hover .price-value,
-            .pricingTable.green:hover .price-value,
-            .pricingTable.red:hover .price-value {
-                color: #fff
-            }
-
-            @media screen and (max-width:990px) {
-                .pricingTable {
-                    margin: 0 0 20px
+        <h1 class="text-center pt-5 pb-2">Our Packages</h1>
+        <section id="packages">
+            <style>
+                a {
+                    text-decoration: none;
                 }
-            }
-        </style>
-        <script type='text/javascript' src=''></script>
-        <script type='text/javascript'
-            src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
-        <script type='text/javascript'
-            src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
-        <script type='text/javascript'></script>
-        <div class="demo pt-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="pricingTable">
-                            <div class="pricingTable-header">
-                                <i class="fa-light fa-chair-office"></i>
-                                <div class="price-value"> $299.90 <span class="month">per month</span> </div>
-                            </div>
-                            <h3 class="heading">Business Fair</h3>
-                            <div class="pricing-content">
-                                <ul>
-                                    <li><b>50GB</b> Limited Space Access</li>
-                                    <li><b>50</b> Email Accounts</li>
-                                    <li><b>50GB</b> Monthly Bandwidth</li>
-                                    <li><b>10</b> subdomains</li>
-                                    <li><b>15</b> Domains</li>
-                                </ul>
-                            </div>
-                            <div class="pricingTable-signup">
-                                <a href="#">sign up</a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-md-3 col-sm-6">
-                        <div class="pricingTable green">
-                            <div class="pricingTable-header">
-                                <i class="fa fa-briefcase"></i>
-                                <div class="price-value"> $499.90 <span class="month">per month</span> </div>
-                            </div>
-                            <h3 class="heading">Wedding Basic</h3>
-                            <div class="pricing-content">
-                                <ul>
-                                    <li><b>60GB</b> Disk Space</li>
-                                    <li><b>60</b> Email Accounts</li>
-                                    <li><b>60GB</b> Monthly Bandwidth</li>
-                                    <li><b>15</b> subdomains</li>
-                                    <li><b>20</b> Domains</li>
-                                </ul>
-                            </div>
-                            <div class="pricingTable-signup">
-                                <a href="#">sign up</a>
+                .pricingTable {
+                    text-align: center;
+                    background: #fff;
+                    margin: 0 -15px;
+                    box-shadow: 0 0 10px #ababab;
+                    padding-bottom: 40px;
+                    border-radius: 10px;
+                    color: #cad0de;
+                    transform: scale(1);
+                    transition: all .5s ease 0s
+                }
+
+                .pricingTable:hover {
+                    transform: scale(1.05);
+                    z-index: 1
+                }
+
+                .pricingTable .pricingTable-header {
+                    padding: 40px 0;
+                    background: #f5f6f9;
+                    border-radius: 10px 10px 50% 50%;
+                    transition: all .5s ease 0s
+                }
+
+                .pricingTable:hover .pricingTable-header {
+                    background: #ff9624
+                }
+
+                .pricingTable .pricingTable-header i {
+                    font-size: 50px;
+                    color: #858c9a;
+                    margin-bottom: 10px;
+                    transition: all .5s ease 0s
+                }
+
+                .pricingTable .price-value {
+                    font-size: 35px;
+                    color: #ff9624;
+                    transition: all .5s ease 0s
+                }
+
+                .pricingTable .month {
+                    display: block;
+                    font-size: 14px;
+                    color: #cad0de
+                }
+
+                .pricingTable:hover .month,
+                .pricingTable:hover .price-value,
+                .pricingTable:hover .pricingTable-header i {
+                    color: #fff
+                }
+
+                .pricingTable .heading {
+                    font-size: 24px;
+                    color: #ff9624;
+                    margin-bottom: 20px;
+                }
+
+                .pricingTable .pricing-content ul {
+                    list-style: none;
+                    padding: 0;
+                    margin-bottom: 30px
+                }
+
+                .pricingTable .pricing-content ul li {
+                    line-height: 30px;
+                    color: #a7a8aa
+                }
+
+                .pricingTable .pricingTable-signup a {
+                    display: inline-block;
+                    font-size: 15px;
+                    color: #fff;
+                    padding: 10px 35px;
+                    border-radius: 20px;
+                    background: #ffa442;
+                    transition: all .3s ease 0s
+                }
+
+                .pricingTable .pricingTable-signup a:hover {
+                    box-shadow: 0 0 10px #ffa442
+                }
+
+                .pricingTable.blue .heading,
+                .pricingTable.blue .price-value {
+                    color: #4b64ff
+                }
+
+                .pricingTable.blue .pricingTable-signup a,
+                .pricingTable.blue:hover .pricingTable-header {
+                    background: #4b64ff
+                }
+
+                .pricingTable.blue .pricingTable-signup a:hover {
+                    box-shadow: 0 0 10px #4b64ff
+                }
+
+                .pricingTable.red .heading,
+                .pricingTable.red .price-value {
+                    color: black
+                }
+
+                .pricingTable.red .pricingTable-signup a,
+                .pricingTable.red:hover .pricingTable-header {
+                    background: black
+                }
+
+                .pricingTable.red .pricingTable-signup a:hover {
+                    box-shadow: 0 0 10px black
+                }
+
+                .pricingTable.green .heading,
+                .pricingTable.green .price-value {
+                    color: #40c952
+                }
+
+                .pricingTable.green .pricingTable-signup a,
+                .pricingTable.green:hover .pricingTable-header {
+                    background: #40c952
+                }
+
+                .pricingTable.green .pricingTable-signup a:hover {
+                    box-shadow: 0 0 10px #40c952
+                }
+
+                .pricingTable.blue:hover .price-value,
+                .pricingTable.green:hover .price-value,
+                .pricingTable.red:hover .price-value {
+                    color: #fff
+                }
+
+                @media screen and (max-width:990px) {
+                    .pricingTable {
+                        margin: 0 0 20px
+                    }
+                }
+            </style>
+            <script type='text/javascript' src=''></script>
+            <script type='text/javascript'
+                src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+            <script type='text/javascript'
+                src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+            <script type='text/javascript'></script>
+            <div class="demo pt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="pricingTable">
+                                <div class="pricingTable-header">
+                                    <i class="fa fa-briefcase"></i>
+                                    <div class="price-value"> $299.90 <span class="month">billed per day</span> </div>
+                                </div>
+                                <h3 class="heading">Business Fair</h3>
+                                <div class="pricing-content">
+                                    <p>For most business events and fairs alike</p>
+                                    <ul>
+                                        <li>Limited Space Access</li>
+                                        <li>Security Facility</li>
+                                        <li>Event Support</li>
+                                        <li>Decoration</li>
+                                    </ul>
+                                </div>
+                                <div class="pricingTable-signup">
+                                    <a href="#">Choose Plan</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="pricingTable blue">
-                            <div class="pricingTable-header">
-                                <i class="fa fa-diamond"></i>
-                                <div class="price-value"> $799.90 <span class="month">per month</span> </div>
-                            </div>
-                            <span
-                                class="position-absolute top-0 start-25 translate-middle badge rounded-pill bg-warning">
-                                Best Deal
-                                <span class="visually-hidden">unread messages</span>
-                            </span>
-                            <h3 class="heading">Wedding Plus</h3>
-                            <div class="pricing-content">
-                                <ul>
-                                    <li><b>70GB</b> Disk Space</li>
-                                    <li><b>70</b> Email Accounts</li>
-                                    <li><b>70GB</b> Monthly Bandwidth</li>
-                                    <li><b>20</b> subdomains</li>
-                                    <li><b>25</b> Domains</li>
-                                </ul>
-                            </div>
-                            <div class="pricingTable-signup">
-                                <a href="#">sign up</a>
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="pricingTable green">
+                                <div class="pricingTable-header">
+                                    <i class="fa fa-ring"></i>
+                                    <div class="price-value"> $499.90 <span class="month">billed as shift</span> </div>
+                                </div>
+                                <h3 class="heading">Wedding Basic</h3>
+                                <div class="pricing-content">
+                                    <p>For weddings with basic amenities</p>
+                                    <ul>
+                                        <li>Full Space Access</li>
+                                        <li>Food Management</li>
+                                        <li>Management Support</li>
+                                        <li>Decoration</li>
+                                    </ul>
+                                </div>
+                                <div class="pricingTable-signup">
+                                    <a href="#">Choose Plan</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="pricingTable red">
-                            <div class="pricingTable-header">
-                                <i class="fa fa-cube"></i>
-                                <div class="price-value"> $1199.90 <span class="month">per month</span> </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="pricingTable blue">
+                                <div class="pricingTable-header">
+                                    <i class="fa fa-diamond"></i>
+                                    <div class="price-value"> $799.90 <span class="month">billed as shift</span> </div>
+                                </div>
+                                <span
+                                    class="position-absolute top-0 start-25 translate-middle badge rounded-pill bg-warning">
+                                    Best Deal
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                                <h3 class="heading">Wedding Plus</h3>
+                                <div class="pricing-content">
+                                    <p>For weddings that require extra service</p>
+                                    <ul>
+                                        <li>Full Space Access</li>
+                                        <li>Food Management</li>
+                                        <li>Extra Management Support</li>
+                                        <li>Extra Decoration</li>
+                                    </ul>
+                                </div>
+                                <div class="pricingTable-signup">
+                                    <a href="#">Choose Plan</a>
+                                </div>
                             </div>
-                            <h3 class="heading">Corporate Event</h3>
-                            <div class="pricing-content">
-                                <ul>
-                                    <li><b>80GB</b> Disk Space</li>
-                                    <li><b>80</b> Email Accounts</li>
-                                    <li><b>80GB</b> Monthly Bandwidth</li>
-                                    <li><b>25</b> subdomains</li>
-                                    <li><b>30</b> Domains</li>
-                                </ul>
-                            </div>
-                            <div class="pricingTable-signup">
-                                <a href="#">sign up</a>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="pricingTable red">
+                                <div class="pricingTable-header">
+                                    <i class="fa fa-handshake"></i>
+                                    <div class="price-value"> $1199.90 <span class="month">pay as plan</span> </div>
+                                </div>
+                                <h3 class="heading">Corporate Event</h3>
+                                <div class="pricing-content">
+                                    <p>For most corporate business events</p>
+                                    <ul>
+                                        <li>Full Space Access</li>
+                                        <li>Dedicated Team</li>
+                                        <li>Buffet Food</li>
+                                        <li>Premium Decoration</li>
+                                    </ul>
+                                </div>
+                                <div class="pricingTable-signup">
+                                    <a href="#">Choose Plan</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Testimonial Section -->
+        </section>
+        <!-- Client Feedback section -->
         <section class="container mx-auto pt-5 mt-lg-5">
-            <h1 class="text-center py-5 mb-md-5">Happy <span class="text-custom">Clients</span> Say</h1>
+            <h1 class="text-center py-5 mb-md-5">Happy <span class="text-custom">Clients</span></h1>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col text-center">
                     <div class="card h-100 border-0 shadow">
