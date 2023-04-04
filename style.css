@@ -21,8 +21,20 @@ body {
 }
 
 .navbar-logo-txt {
-    font-weight: 500;
+    font-weight: 450;
     color: #3E3E3E;
+}
+
+.navbar-nav>li>a {
+    display: block;
+    color: gray;
+    text-decoration: none;
+    transition: .4s;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav>li>a:hover {
+    color: black;
 }
 
 .white-btn {
@@ -76,6 +88,8 @@ body {
 
 .footer {
     background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .pink-btn {
@@ -99,4 +113,14 @@ body {
 .choose-btn:hover {
     color: white;
     background-color: black;
+}
+
+@media only screen and (max-width: 400px) {
+    .carousel-item {
+        height: 40vh;
+    }
+
+    .carousel-item img {
+        height: 100%;
+    }
 }
